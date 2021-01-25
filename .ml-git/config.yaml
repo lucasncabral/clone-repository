@@ -1,0 +1,23 @@
+batch_size: 20
+dataset:
+  git: https://github.com/lucasncabral/mlgit-lucas-datasets
+model:
+  git: https://github.com/lucasncabral/mlgit-lucas-model
+store:
+  s3:
+    mlgit-datasets:
+      aws-credentials:
+        profile: default
+      region: us-east-1
+  s3h:
+    minio1:
+      aws-credentials:
+        profile: null
+      endpoint-url: http://127.0.0.1:9000
+      region: null
+  sftph:
+    mlgit:
+      endpoint-url: 127.0.0.1
+      port: 9922
+      private-key: D:\Virtus\.ssh\id_rsa
+      username: mlgit_user
